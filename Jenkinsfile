@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo "Logging in to Docker Hub..."
                 withCredentials([usernamePassword(
-                    credentialsId: 'dockerhub',
+                    credentialsId: 'dockerhub-new',
                     usernameVariable: 'DOCKER_USER',
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
